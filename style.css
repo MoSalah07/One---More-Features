@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-white: #fff;
+    --sky-blue: #20b0f2;
+    --border-radius: .25rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {font-family: 'Roboto', sans-serif;}
+
+.game {
+    background-color: #eee;
+    min-height: 100vh;
+    text-transform: capitalize;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8rem;
+    background-color: var(--sky-blue);
+    padding: 1rem;
+}
+
+.option h2.title {
+    color: var(--color-white);
+}
+
+.option select#options {
+    padding: .5rem;
+    outline: none;
+    border: 1px solid var(--color-white);
+    background-color: var(--sky-blue);
+    color: var(--color-white);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.option select#options > option {
+    background-color: var(--sky-blue);
+    color: var(--color-white);
+}
+
+.container {
+    margin: 2rem auto;
+    padding-inline: 1rem;
+    max-width: 70%;
+    /* background-color: var(--color-white); */
+}
+
+.container .info {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: var(--color-white);
+    padding: 1rem 0;
+    border-radius: var(--border-radius);
+}
+
+.container .info span {
+    color: #009688;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.container .btn-start-play {
+    background-color: #009688;
+    color: var(--color-white);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+    display: block;
+}
+
+.container .btn-start-play:hover {
+    background-color: #107c73;
+}
+
+.container .btn-start-play.hidden {
+    display: none;
+}
+
+.container .random-word {
+    background-color: transparent;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--sky-blue);
+    margin: 1rem 0;
+}
+
+.container input#input {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid var(--sky-blue);
+    caret-color: var(--sky-blue);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+.container .main-words {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
+
+.container .main-words > div {
+    background-color: var(--sky-blue);
+    color: var(--color-white);
+    padding: .45rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.container .game-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.container .game-info .time {
+    flex: 1;
+}
+
+.container .game-info .time-left, .score-count, .final-score {
+    color: #009688;
+}
+
+.container .finish {
+    background-color: var(--color-white);
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.container .finish > div {
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .finish .good {
+    color: var(--sky-blue);
+}
+
+.container .finish .bad {
+    color: red;
+}
+
+
+

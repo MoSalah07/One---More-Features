@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing Speed Test Game</title>
+</head>
+<body>
+    <div class="game">
+        <div class="option">
+            <select id="options">
+                <option value="">Select Level</option>
+                <option value="hard">Hard</option>
+                <option value="normal">normal</option>
+                <option value="easy">easy</option>
+            </select>
+            <h2 class="title">typing speed test game</h2>
+        </div>
+        <div class="container">
+            <div class="info">
+                you are playing on 
+                <span class="type-game">[ Empty ]</span>
+                Level & You Have
+                <span class="seconds-game">[ 0 ]</span>
+                seconds to type the world
+            </div>
+            <div class="btn-start-play">start playing</div>
+            <div class="random-word"></div>
+            <input type="text" id="input" autocomplete="off">
+            <div class="main-words"></div>
+            <div class="game-info">
+                <div class="time">
+                    time left: <span class="time-left">0</span> seconds
+                </div>
+                <div class="score">
+                    score: <span class="score-count">0</span>
+                    from : <span class="final-score">30</span>
+                </div>
+            </div>
+            <div class="finish"></div>
+        </div>
+    </div>
+    <script src="/js/main.js" type="module"></script>
+    <script src="/JS/inhret.js" type="module"></script>
+</body>
+</html>
